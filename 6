@@ -1,0 +1,14 @@
+from itertools import count
+for el in count(1):
+    if el > 5:
+        break
+    else:
+        print(el)
+from itertools import cycle
+c = 0
+for el in cycle ('12345'):
+    if c > 5:
+        break
+    else:
+        print(el)
+        c += 1
